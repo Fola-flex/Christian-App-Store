@@ -1,0 +1,13 @@
+export { default as logo } from './christian-app-store-logo.png'; 
+export { default as bible } from './bible_icon.png';
+export { default as twitter } from './twitter.svg';
+export { default as tiktok } from './tiktok.svg';
+export { default as ark } from './ark.png';
+export { default as hamburger } from './hamburger.svg';
+export { default as arrow } from './arrow.svg';
+export { default as host } from './host.png';
+export { default as discover } from './discover.svg';
+export { default as christian } from './christian.png';
+export { default as christians } from './christian.svg';
+export { default as download } from './download.png';
+export { default as holy } from './holy_bible.png'
