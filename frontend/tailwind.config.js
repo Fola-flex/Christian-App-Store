@@ -22,7 +22,7 @@ module.exports = {
             small: "0.65rem",
             medium: "0.78rem",
             heading: "1.3rem",
-            sidebarLinks: "0.66rem"
+            sidebarLinks: "0.68rem"
         },
         lineHeight: {
             primary: "1",

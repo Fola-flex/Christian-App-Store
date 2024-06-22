@@ -15,7 +15,7 @@ const topbar = () => {
             </div>
             <div className='w-[22rem]'>
                 <div className='w-full flex items-center rounded-lg relative'>
-                    <img className="absolute px-3" src={arrow} />
+                    <img className="absolute px-2" src={arrow} />
                     <input className='bg-[#353637] w-full h-[1.9rem] text-white pl-9 pr-2 rounded-lg' type='search' />
                 </div>
                 

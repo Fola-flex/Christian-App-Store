@@ -37,12 +37,12 @@ const Tiles = () => {
             slides-per-group="3"
         >
             <swiper-slide>
-                <div className='bg-[rgb(25,25,25)] w-full rounded-xl box-border flex items-center pr-3.5 pl-5 pt-5 pb-6 hover:opacity-70'>
+                <div className='bg-[rgb(25,25,25)] w-full rounded-xl box-border flex items-center pr-3 pl-[1.35rem] pt-6 pb-6 hover:opacity-70'>
                     <div className='flex w-3/5 flex-col gap-11'>
                         <div className='flex w-full flex-col gap-1.5'>
-                            <p className='text-textSecondary leading-primary text-small'>APP</p>
-                            <h1 className='text-textPrimary font-google tracking-wide font-medium leading-secondary text-heading'>The Bible Ecosystem to Properly Orient You</h1>
-                            <p className='text-textSecondary text-medium pr-4 leading-primary font-jost'>Become everything God has created you to be. Daily study, audio & prayer.</p>
+                            <p className='text-textSecondary tracking-wide leading-primary text-[0.6rem]'>APP</p>
+                            <h1 className='text-textPrimary font-google tracking-wide font-medium leading-secondary text-heading lg:text-sm'>The Bible Ecosystem to Properly Orient You</h1>
+                            <p className='text-textSecondary text-medium -tracking-[0.007em] pr-4 leading-[0.85rem] font-jost'>Become everything God has created you to be. Daily study, audio & prayer.</p>
                         </div>
                         <p className="text-small leading-primary text-[#00A6FF]"><a>Download Now</a></p>
                     </div>
@@ -57,7 +57,7 @@ const Tiles = () => {
                         <div className='flex w-full flex-col gap-2'>
                             <p className='text-textSecondary leading-primary text-small'>APP</p>
                             <h1 className='text-textPrimary leading-secondary text-heading'>The Bible Ecosystem to Properly Orient You</h1>
-                            <p className='text-textSecondary text-medium pr-4 leading-primary font-jost'>Become everything God has created  you to be. Daily study, audio & prayer.</p>
+                            <p className='text-textSecondary text-medium pr-4 leading-primary font-jost'>Become everything God has created you to be. Daily study, audio & prayer.</p>
                         </div>
                         <p className="text-small leading-primary text-[#00A6FF]"><a>Download Now</a></p>
                     </div>

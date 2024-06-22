@@ -42,13 +42,13 @@ const sidebar = memo(() => {
     }, [sidebarLinks]);
 
     return (
-        <aside className="bg-[#18191A] flex flex-col gap-[1.125rem] w-[13.8rem] h-full py-[2.75rem] px-2">
+        <aside className="bg-[#18191A] flex flex-col gap-[1.125rem] w-[13.8rem] h-auto py-[2.75rem] px-2">
             <div className="flex flex-col gap-6">
                 <Button src={discover} alt='Discover Icon button' title='Discover' width='15' />
                 <Button src={christians} alt="Discover Icon" title="Christian" width='11' />
             </div>
             <nav ref={menuRef} className="">
-                <ul className="flex flex-col w-full h-auto gap-3.5 px-[1.15rem] text-white">
+                <ul className="flex flex-col w-full h-auto gap-[0.848rem] px-[1.17rem] text-white">
                     {sidebarLinks.map((sidebarLink, index) => {
                         return (
                             <li key={index} className="font-google tracking-wide text-sidebarLinks">

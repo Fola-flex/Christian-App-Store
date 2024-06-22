@@ -27,7 +27,7 @@ const Navbar = () => {
     }, [])
     
   return (
-    <nav className='bg-[#202020] w-full flex items-center pl-20 pr-[5.25rem] py-2.5'>   
+    <nav className='bg-[#202020] overflow-x-scroll no-scrollbar w-full flex items-center px-20 py-2.5'>   
         <Menu />
     </nav>
   )
