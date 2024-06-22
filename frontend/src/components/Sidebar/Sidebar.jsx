@@ -15,14 +15,15 @@ const sidebar = memo(() => {
             .then((data) => {
                 setSideBarLinks(data[0])
             })
+            .catch(err => console.error(err))
     }, [])
 
     useEffect(() => {
         const handleLinkClick = (event) => {
             const element = event.currentTarget;
-            const firstChild = element.firstElementChild;
-            if (firstChild) {
-                firstChild.classList.toggle('hidden');
+            const childList= element.lastElementChild;
+            if (childList) {
+                childList.classList.toggle('hidden');
             }
         };
 

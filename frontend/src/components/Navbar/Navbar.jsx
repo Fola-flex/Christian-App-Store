@@ -23,6 +23,7 @@ const Navbar = () => {
             .then((data) => {
                 setnavbarLinks(data[0])
             })
+            .catch(err => console.err(err))
     }, [])
     
   return (

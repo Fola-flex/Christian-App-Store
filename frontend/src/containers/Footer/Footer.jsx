@@ -14,6 +14,7 @@ const Footer = () => {
             .then((data) => {
                 setfooterLinks(data[0])
             })
+            .catch(err => console.error(err))
     }, [])
 
   return (

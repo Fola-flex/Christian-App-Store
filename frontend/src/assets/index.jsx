@@ -10,4 +10,5 @@ export { default as discover } from './discover.svg';
 export { default as christian } from './christian.png';
 export { default as christians } from './christian.svg';
 export { default as download } from './download.png';
-export { default as holy } from './holy_bible.png'
+export { default as holy } from './holy_bible.png';
+export { default as left_arrow } from './left-arrow.svg';  

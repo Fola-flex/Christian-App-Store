@@ -6,17 +6,17 @@
 
 @font-face {
     font-family: GoogleSans;
-    src: url(../public/fonts/google-sans/ProductSans-Regular.ttf);
+    src: url(/fonts/google-sans/ProductSans-Regular.ttf);
 }
 
 @font-face {
     font-family: GoogleSansLight;
-    src: url(../public/fonts/google-sans/ProductSans-Regular.ttf);
+    src: url(/fonts/google-sans/ProductSans-Regular.ttf);
 }
 
 @font-face {
     font-family: Moon;
-    src: url(../public/fonts/moon/Moon\ Light.otf);
+    src: url(/fonts/moon/Moon\ Light.otf);
 }
 
 body {
@@ -29,6 +29,12 @@ body {
 
 .listItem {
     font-size: 0.85rem;
+}
+
+.my-prev-arrow {
+    height: 200px;
+    line-height: 200px;
+    font-size: 200px;
 }
 
 .show-button:hover .my-prev-arrow,
