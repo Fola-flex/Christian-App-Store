@@ -68,8 +68,8 @@ const Tiles = () => {
                             <div className='flex w-3/5 flex-col gap-[3.1rem]'>
                                 <div className='flex w-full flex-col gap-[0.5rem]'>
                                     <p className='text-textSecondary tracking-[0.006rem] leading-primary uppercase text-[0.7rem]'>{value.category}</p>
-                                    <h1 className='text-textPrimary font-google tracking-[0.076rem] font-medium leading-[1.67rem] text-heading lg:text-sm'>{value.cardName}</h1>
-                                    <p className='text-textSecondary text-[0.84rem] tracking-[0.0175em] font-light pr-3.5 leading-[0.89rem] font-jost'>{value.description}</p>
+                                    <h1 className='text-textPrimary font-google tracking-[0.076rem] font-medium leading-[1.70rem] text-heading lg:text-sm'>{value.cardName}</h1>
+                                    <p className='text-textSecondary text-[0.84rem] tracking-[0.0176em] font-light pr-3.5 leading-[0.89rem] font-jost'>{value.description}</p>
                                 </div>
                                 <p className="text-[0.73rem] leading-primary text-[#00A6FF]"><a>{value.button}</a></p>
                             </div>
