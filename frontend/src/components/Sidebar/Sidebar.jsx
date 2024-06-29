@@ -41,24 +41,28 @@ const sidebar = memo(() => {
         };
     }, [sidebarLinks]);
 
+    const onButtonClick = () => {
+
+    }
+
     return (
-        <aside className="bg-[#18191A] flex flex-col gap-[1.125rem] w-[13.8rem] h-auto py-[2.75rem] px-2">
-            <div className="flex flex-col gap-6">
+        <aside className="bg-[#18191A] flex flex-col gap-[1.2rem] w-[15.4rem] h-auto py-[3rem] px-2.5">
+            <div className="flex flex-col gap-[1.4rem]">
                 <Button src={discover} alt='Discover Icon button' title='Discover' width='15' />
                 <Button src={christians} alt="Discover Icon" title="Christian" width='11' />
             </div>
             <nav ref={menuRef} className="">
-                <ul className="flex flex-col w-full h-auto gap-[0.848rem] px-[1.17rem] text-white">
+                <ul className="flex flex-col w-full h-auto gap-[0.874rem] px-[1.3rem] text-white">
                     {sidebarLinks.map((sidebarLink, index) => {
                         return (
-                            <li key={index} className="font-google tracking-wide text-sidebarLinks">
+                            <li key={index} className="font-google text-sidebarLinks hover:text-hover cursor-pointer">
                                 {sidebarLink.title}
                                 {sidebarLink.childLinks && <span className="ml-1.5">&gt;</span>}
                                 {sidebarLink.childLinks && (
                                     <ul className="flex hidden flex-col w-full h-auto gap-3.5 px-2.5 py-2 text-white">
                                         {sidebarLink.childLinks.map((childLink, i) => {
                                             return (
-                                                <li key={i + 'li'} className="font-google text-sidebarLinks">{childLink.title}</li>
+                                                <li key={i + 'li'} className="font-google text-sidebarLinks hover:text-hover cursor-pointer">{childLink.title}</li>
                                             )
                                         })}
                                     </ul>

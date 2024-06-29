@@ -1,8 +1,11 @@
 import React from 'react';
 
-const Button = ({ src, alt, title, width}) => {
+const Button = ({ src, alt, title, width, onclickFunction}) => {
   return (
-    <button className="bg-[#343434] font-google flex items-center gap-1.5 justify-start pl-3 py-[0.3rem] text-[0.875rem] text-white rounded-lg active:text-[#00A6FF]">
+    <button 
+        className="bg-[#343434] font-google flex items-center gap-2 justify-start pl-3 py-[0.4rem] text-[1rem] text-white rounded-lg hover:bg-gray-500 hover:text-hover active:text-[#00A6FF]"
+        onClick={onclickFunction}
+    >
         <img className="" width={width} src={src} alt={alt} />
         {title}
     </button>

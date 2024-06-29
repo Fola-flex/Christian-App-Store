@@ -6,7 +6,7 @@ const Main = () => {
     <main className='min-w-0'>
         <section className='box-border flex'>
             <Sidebar />
-            <div className='overflow-hidden w-full flex flex-col px-9 gap-9'>
+            <div className='overflow-hidden w-full flex flex-col px-[2.4rem] gap-10'>
                 <Hero />
                 <Tiles />
                 <ToolSection />

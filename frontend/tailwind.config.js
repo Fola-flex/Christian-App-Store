@@ -8,7 +8,8 @@ module.exports = {
           primary: "#101010",
           secondary: "#232323",
           footer: "#202020",
-          active: "#343434"
+          active: "#343434",
+          hover: "#00A6FF"
         },
         fontFamily: {
           poppins: ["Poppins", "sans-serif"],
@@ -20,13 +21,13 @@ module.exports = {
         fontSize: {
             primary: "15px",
             small: "0.65rem",
-            medium: "0.78rem",
+            medium: "0.9rem",
             heading: "1.3rem",
-            sidebarLinks: "0.68rem"
+            sidebarLinks: "0.8rem"
         },
         lineHeight: {
             primary: "1",
-            secondary: "1.2",
+            secondary: "1.69rem",
         },
         textColor: {
             textPrimary: "#E0E0E0",
