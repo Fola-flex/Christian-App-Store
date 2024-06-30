@@ -52,7 +52,7 @@ const Tiles = () => {
         <swiper-container 
             ref={swipeRef} 
             init="false" 
-            class="flex w-full items-start gap-4" 
+            class="flex w-full items-start justify-between" 
             navigation="true" 
             space-between="18" 
             slides-per-view="3"
@@ -64,16 +64,16 @@ const Tiles = () => {
             {tile.map((value, index) => {
                 return (
                     <swiper-slide>
-                        <div className='bg-[rgb(25,25,25)] w-full rounded-xl box-border flex items-center pr-2 pl-[1.5rem] pt-[1.6rem] pb-[1.75rem] hover:opacity-70'>
-                            <div className='flex w-3/5 flex-col gap-[3.1rem]'>
-                                <div className='flex w-full flex-col gap-[0.5rem]'>
-                                    <p className='text-textSecondary tracking-[0.006rem] leading-primary uppercase text-[0.7rem]'>{value.category}</p>
-                                    <h1 className='text-textPrimary font-google tracking-[0.076rem] font-medium leading-[1.70rem] text-heading lg:text-sm'>{value.cardName}</h1>
-                                    <p className='text-textSecondary text-[0.84rem] tracking-[0.0176em] font-light pr-3.5 leading-[0.89rem] font-jost'>{value.description}</p>
+                        <div className='bg-[rgb(25,25,25)] w-full rounded-xl box-border flex items-center max-w-[28.9rem] pr-[0.85rem] pl-[1.55rem] pt-[1.6rem] pb-[1.75rem] hover:opacity-70'>
+                            <div className='flex w-3/5 flex-col gap-[3.2rem]'>
+                                <div className='flex w-full flex-col gap-[0.6rem]'>
+                                    <p className='text-textSecondary tracking-[0.01rem] leading-primary uppercase text-[0.7rem]'>{value.category}</p>
+                                    <h1 className='text-textPrimary font-google tracking-[0.07rem] font-medium leading-[1.70rem] text-heading lg:text-sm'>{value.cardName}</h1>
+                                    <p className='text-textSecondary text-[0.86rem] tracking-[0.0176em] font-light pr-4 -mt-1 leading-4 font-jost'>{value.description}</p>
                                 </div>
-                                <p className="text-[0.73rem] leading-primary text-[#00A6FF]"><a>{value.button}</a></p>
+                                <p className="text-[0.74rem] leading-primary text-[#00A6FF]"><a>{value.button}</a></p>
                             </div>
-                            <div className='w-[11rem] h-full pr-2'>
+                            <div className='w-[10.5rem] h-full'>
                                 <img src={value.images.asset.url} className='w-full h-full' alt='bible icon' />
                             </div>
                         </div>

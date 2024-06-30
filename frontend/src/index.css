@@ -10,11 +10,6 @@
 }
 
 @font-face {
-    font-family: GoogleSansLight;
-    src: url(/fonts/google-sans/GoogleSans-Regular.ttf);
-}
-
-@font-face {
     font-family: Moon;
     src: url(/fonts/moon/Moon\ Light.otf);
 }
@@ -38,7 +33,7 @@ body {
   }
 
 .shadows {
-    box-shadow: 0px 0.5px 5px 2px rgba(0, 0, 0, 0.5) ;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.5) ;
 }
 
 .listItem {

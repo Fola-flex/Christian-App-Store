@@ -14,7 +14,6 @@ module.exports = {
         fontFamily: {
           poppins: ["Poppins", "sans-serif"],
           google: ["GoogleSans", "sans-serif"],
-          googleLight: ["GoogleSansLight", "sans-serif"],
           moon: ["Moon", "sans-serif"],
           jost: ["Jost"]
         },
@@ -22,8 +21,8 @@ module.exports = {
             primary: "15px",
             small: "0.65rem",
             medium: "0.9rem",
-            heading: "1.3rem",
-            sidebarLinks: "0.8rem"
+            heading: "1.35rem",
+            sidebarLinks: "0.78rem"
         },
         lineHeight: {
             primary: "1",
