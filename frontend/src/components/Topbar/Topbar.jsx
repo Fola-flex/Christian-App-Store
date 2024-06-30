@@ -9,7 +9,7 @@ const topbar = () => {
                 <div className='w-[1.61rem]'>
                     <img className='w-full h-full' src={logo} alt='Christian-app-store logo' />      
                 </div>
-                <div className=''>
+                <div className='pt-0.5'>
                     <p className='font-moon text-[0.93rem] leading-9 tracking-[0.174rem] text-white'>CHRISTIAN APP STORE</p>
                 </div>
             </div>
