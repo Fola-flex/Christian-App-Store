@@ -4,7 +4,7 @@ import { arrow, hamburger, logo, host } from '../../assets';
 const topbar = () => {
   return (                             
     <div className='bg-secondary relative z-10 flex items-center shadows'>
-        <div className='flex items-center px-9 py-[1.05rem] justify-between w-full'>
+        <div className='flex items-center px-9 py-[1rem] justify-between w-full'>
             <div className='flex justify-between items-center gap-x-[0.64rem] '>
                 <div className='w-[1.61rem]'>
                     <img className='w-full h-full' src={logo} alt='Christian-app-store logo' />      
