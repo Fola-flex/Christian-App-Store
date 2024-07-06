@@ -1,13 +1,24 @@
-import React, { memo } from 'react'
+ import React, {forwardRef, useRef, useState, useEffect, memo } from 'react'
 import { tiktok, twitter } from '../../assets';
 
 
-const FooterLink = memo(({title, childLinks}) => {
+const FooterLink = memo(forwardRef(({title, childLinks}, ref) => {  
+    const titleRef = useRef(null);
+    const [width, setWidth] = useState('auto');
+  
+    useEffect(() => {
+      if (titleRef.current) {
+        const titleWidth = titleRef.current.offsetWidth;
+        setWidth(`${titleWidth}px`);
+
+      }
+    }, [title]);
+
   return (     
-    <div className='flex flex-col flex-1 min-w-0 text-white'>
-        <p className='text-white font-bold text-nowrap text-medium mb-2.5'>{title}</p>
+    <div style={{width}} ref={ref} className='flex flex-col text-white'>
+        <p ref={titleRef} className='w-fit text-white font-bold text-nowrap text-medium mb-2.5'>{title}</p>
         {childLinks && (
-        <ul className='flex flex-col gap-1.5 text-nowrap'>
+        <ul className='flex flex-col gap-[0.4rem] text-nowrap'>
             {childLinks.map((chidLink, i ) => {
                 return (
                     <li key={chidLink.id || i} className='text-textSecondary text-medium'>{chidLink.title}</li>
@@ -17,6 +28,6 @@ const FooterLink = memo(({title, childLinks}) => {
         )}
     </div>
   )
-});
+}));
 
 export default FooterLink

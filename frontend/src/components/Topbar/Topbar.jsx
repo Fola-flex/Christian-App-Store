@@ -4,12 +4,12 @@ import { arrow, hamburger, logo, host } from '../../assets';
 const topbar = () => {
   return (                             
     <div className='bg-secondary relative z-10 flex items-center shadows'>
-        <div className='flex items-center px-9 py-[1rem] justify-between w-full'>
+        <div className='flex items-center px-9 py-[1.03rem] justify-between w-full'>
             <div className='flex justify-between items-center gap-x-[0.64rem] '>
                 <div className='w-[1.61rem]'>
                     <img className='w-full h-full' src={logo} alt='Christian-app-store logo' />      
                 </div>
-                <div className='pt-0.5'>
+                <div className='pt-[1px]'>
                     <p className='font-moon text-[0.93rem] leading-9 tracking-[0.174rem] text-white'>CHRISTIAN APP STORE</p>
                 </div>
             </div>
