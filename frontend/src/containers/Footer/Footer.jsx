@@ -30,7 +30,7 @@ const Footer = () => {
       }, [footerLinks]);
 
   return (
-    <footer>
+    <footer className='relative bottom-0'>
         <div className="bg-footer px-[24.4rem] pt-[3.38rem] pb-4 lg:px-32 md:px-16 sm:px-4">
             <div className='sm:flex-wrap px-[3.1rem] lg:px-8 md:px-5 ss:px-2 pb-[2.55rem] flex items-center ss:justify-center justify-between md:gap-14 border-b-[1px] mx-auto border-[#a3a3a3]'>
                 {footerLinks.map((link, index) => {

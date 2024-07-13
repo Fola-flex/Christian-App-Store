@@ -48,8 +48,8 @@ const sidebar = memo(() => {
     return (
         <aside className="bg-[#18191A] flex flex-col gap-[1.34rem] w-[15.65rem] h-auto py-[3.12rem] px-2.5">
             <div className="flex flex-col gap-[1.56rem]">
-                <Button src={discover} alt='Discover Icon button' title='Discover' height='16' width='16' />
-                <Button src={christians} alt="Discover Icon" title="Christian" height='16' width='12' />
+                <Button src={discover} alt='Discover Icon button' title='Discover' height='18' width='16' />
+                <Button src={christians} alt="Discover Icon" title="Christian" height='14' width='13' />
             </div>
             <nav ref={menuRef} className="">
                 <ul className="flex flex-col w-full h-auto gap-[0.9485rem] px-[1.3rem] text-white">

@@ -1,5 +1,6 @@
 import React from 'react';
-import { Hero, Sidebar, Tiles, ToolSection } from '../../components';
+import { Hero, Sidebar, Tiles } from '../../components';
+import ToolSection from '../ToolSection/ToolSection';
 
 const Main = () => {
   return (

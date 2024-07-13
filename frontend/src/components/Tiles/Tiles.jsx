@@ -24,7 +24,6 @@ const Tiles = () => {
             }`)
             .then((data) => {
                 setTile(data)
-                console.log(data)
             })
             .catch(err => console.error(err))
     }, [])
@@ -32,6 +31,30 @@ const Tiles = () => {
     useEffect(() => {
         const swiperContainer = swipeRef.current;
         const params = {
+            init: true,  
+            spaceBetween: 20, 
+            slidesPerView: 3,
+            speed: 500, 
+            cssMode: true,
+            slidesPerGroup: 3,
+            breakpoints: {
+                640: {
+                  slidesPerView: 1,
+                  spaceBetween: 20,
+                },
+                768: {
+                  slidesPerView: 2,
+                  spaceBetween: 20,
+                },
+                1280: {
+                  slidesPerView: 2,
+                  spaceBetween: 20,
+                },
+                1440: {
+                  slidesPerView: 2,
+                  spaceBetween: 20,
+                },
+              },
           navigation: {
             prevEl: ".previous-arrow",
             nextEl: ".next-arrow",
@@ -50,23 +73,16 @@ const Tiles = () => {
             </svg>
         </span>
         <swiper-container 
-            ref={swipeRef} 
-            init="false"  
-            navigation="true" 
-            space-between="20" 
-            slides-per-view="3"
-            speed="500" 
-            css-mode="true"
-            slides-per-group="3"
+            ref={swipeRef}     
         >
             {tile.map((value, index) => {
                 return (
-                    <swiper-slide>
-                        <div className='bg-[rgb(25,25,25)] w-full gap-[3px] rounded-xl box-border flex items-center max-w-[28.9rem] pr-[0.9375rem] pl-[1.5625rem] pt-[1.5rem] pb-[1.6rem] hover:opacity-70'>
+                    <swiper-slide key={index + 'tile'}>
+                        <div className='bg-[rgb(25,25,25)] w-full gap-[3px] rounded-xl box-border flex items-center pr-[0.9375rem] pl-[1.5625rem] pt-[1.5rem] pb-[1.6rem] hover:opacity-70'>
                             <div className='flex w-3/5 flex-col gap-[2.95rem]'>
                                 <div className='flex w-full flex-col gap-[0.4rem]'>
                                     <p className='text-textSecondary font-googleMedium uppercase text-[0.6675rem]'>{value.category}</p>
-                                    <h1 className='text-textPrimary font-googleMedium leading-[1.70rem] text-heading lg:text-sm'>{value.cardName}</h1>
+                                    <h1 className='text-textPrimary font-googleMedium leading-[1.70rem] text-heading'>{value.cardName}</h1>
                                     <p className='text-textSecondary text-[0.875rem] font-jost pr-2.5 leading-4 '>{value.description}</p>
                                 </div>
                                 <p className="text-[0.75rem] font-google text-[#00A6FF]"><a>{value.button}</a></p>

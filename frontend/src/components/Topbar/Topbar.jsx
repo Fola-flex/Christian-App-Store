@@ -21,8 +21,8 @@ const topbar = () => {
                 
             </div>
             <div className='flex items-center'>
-                <div className='bg-[#353637] flex pl-3 pr-1.5 py-[0.35rem] gap-3 items-center mx-auto w-full rounded-3xl'>
-                    <img className='h-3.5' src={hamburger}  alt='Hamburger icon' />
+                <div className='bg-[#353637] flex pl-[0.8rem] pr-1.5 py-[0.35rem] gap-2.5 items-center mx-auto w-full rounded-3xl'>
+                    <img className='h-[0.85rem]' src={hamburger}  alt='Hamburger icon' />
                     <img className='h-full w-[2rem]' src={host} alt='Host Icon'  />
                 </div>
             </div>
