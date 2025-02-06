@@ -7,21 +7,23 @@ const FooterLink = memo(forwardRef(({title, childLinks}, ref) => {
     const [width, setWidth] = useState('auto');
   
     useEffect(() => {
-      if (titleRef.current) {
-        const titleWidth = titleRef.current.offsetWidth;
-        setWidth(`${titleWidth}px`);
-
-      }
-    }, [title]);
+        if (window.innerWidth <= 1700 && titleRef.current) {
+          setWidth('auto');
+        } else {
+            const titleWidth = titleRef.current.offsetWidth;
+            setWidth(`${titleWidth}px`);
+        }
+      }, [title, window.innerWidth, titleRef]);
+    
 
   return (     
-    <div style={{width}} ref={ref} className='flex flex-col text-white'>
-        <p ref={titleRef} className='w-fit text-white font-bold text-nowrap text-medium mb-2.5'>{title}</p>
+    <div style={{width}} ref={ref} className='flex flex-col min-w-0 xs:basis-[120px] text-white'>
+        <p ref={titleRef} className='w-fit sm:w-auto text-white font-bold text-nowrap text-medium mb-2.5'>{title}</p>
         {childLinks && (
         <ul className='flex flex-col gap-[0.4rem] text-nowrap'>
             {childLinks.map((chidLink, i ) => {
                 return (
-                    <li key={chidLink.id || i} className='text-textSecondary text-medium'>{chidLink.title}</li>
+                    <li key={chidLink.id || i} className='text-textSecondary font-google text-medium'>{chidLink.title}</li>
                 )
             })}
         </ul>

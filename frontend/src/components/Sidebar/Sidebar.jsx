@@ -46,7 +46,7 @@ const sidebar = memo(() => {
     }
 
     return (
-        <aside className="bg-[#18191A] flex flex-col gap-[1.34rem] w-[15.65rem] h-auto py-[3.12rem] px-2.5">
+        <aside className="bg-[#18191A] flex flex-col gap-[1.34rem] w-[15.65rem] h-auto py-[3.12rem] px-2.5 sm:hidden">
             <div className="flex flex-col gap-[1.56rem]">
                 <Button src={discover} alt='Discover Icon button' title='Discover' height='18' width='16' />
                 <Button src={christians} alt="Discover Icon" title="Christian" height='14' width='13' />

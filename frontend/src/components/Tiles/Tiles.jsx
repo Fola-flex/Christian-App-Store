@@ -55,19 +55,21 @@ const Tiles = () => {
                   spaceBetween: 20,
                 },
               },
-          navigation: {
-            prevEl: ".previous-arrow",
-            nextEl: ".next-arrow",
-          }
+              navigation: {
+                enabled: true,
+                prevEl: ".previous-arrow",
+                nextEl: ".next-arrow",
+            },
         };
     
         Object.assign(swiperContainer, params);
         swiperContainer.initialize();
+        
       }, []);
 
   return (
     <div className='w-full show-button relative'>
-        <span className='-left-[2%] top-1/4 opacity-0 absolute text-[rgb(0,166,255)] z-20 previous-arrow'>
+        <span className='xs:h-10 -left-[2%] top-1/4 opacity-0 absolute text-[rgb(0,166,255)] z-20 previous-arrow'>
             <svg width="28" height="60" viewBox="0 0 28 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M20 10L8 30l12 20" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
@@ -95,7 +97,7 @@ const Tiles = () => {
                 ) 
             })}
         </swiper-container>
-        <span className='text-lg opacity-0 text-[#00A6FF] -right-[2%] z-20 top-1/4 absolute next-arrow'>
+        <span className='xs:h-10 text-lg opacity-0 text-[#00A6FF] -right-[2%] z-20 top-1/4 absolute next-arrow'>
             <svg width="28" height="60" viewBox="0 0 28 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M8 10L20 30L8 50" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
