@@ -40,8 +40,7 @@ const Tiles = () => {
             breakpoints: {
                 640: {slidesPerView: 1},
                 768: {slidesPerView: 2},
-                1280: {slidesPerView: 3},
-                1440: {slidesPerView: 3},
+                1280: {slidesPerView: 3},                
               },
               navigation: {
                 enabled: true,
@@ -53,7 +52,7 @@ const Tiles = () => {
         Object.assign(swiperContainer, params);
         swiperContainer.initialize();
         
-      }, [tile]);
+      }, []);
 
   return (
     <div className='w-full show-button relative'>
